@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sinh ra nhằm mục đích tính toán
+        //thường thì dùng for thường
+        // let sum = 0;rỉ ckm8
+        //tính tổng tất cả cá phần tử trong number
+        /*
+        for(let i = 0; i < number.length;i++){
+            sum +=number[i];
+        }
+        console.log("Tổng là:",sum);
+        */
+    //    let number = [5,7,8,9,11]
+    //    let summer = number.reduce((summer,number)=>{
+    //         return summer + number
+    //     console.log(summer);
+    //     let sum = number.reduce((sum,number)=>{
+    //         return sum + number
+    //     });
+    //     console.log(sum);
+    let product = [
+        {
+            name: "iphone5",
+            quantity: 5,
+            price: 2000,
+        },
+        {
+            name: "iphone12",
+            quantity: 6,
+            price: 5000,
+        },
+        {
+            name: "iphone15",
+            quantity: 8,
+            price: 8000,
+        }
+    ]
+    let total = product.reduce((total,item)=>{
+        return total + item.quantity * item.price
+    },0);
+    console.log(total);
+    </script>
+    
+</body>
+</html>
+
+
