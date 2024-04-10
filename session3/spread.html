@@ -7,9 +7,27 @@
 </head>
 <body>
     <script>
-        function allPositveNumber(numbers) {
-            
+        /*
+        let number = [5, 6, 7,8,9]
+        // let newArr = [...number];
+        let newArr = number;// gần địa chỉ
+        let newArr1 = [...number];//Tạo địa chỉ ô nhớ mới
+ 
+        number.push(4);
+        console.log(newArr1);   
+        */
+       let obj = {
+            name:'Minh',
+            address:'hn',
+            age: 20,
+            phone: '555',
+            email:'minh@gmail.com',
         }
+        obj.name= "hoa";
+        let obj2 ={...obj};// Tạo ra điạ chỉ mới
+        console.log(obj2);
+        console.log(obj == obj2);// so sánh 2 địa chỉ
+
     </script>
 </body>
 </html>

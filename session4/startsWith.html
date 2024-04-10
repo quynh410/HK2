@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+       */
+      let text = "hello pitt";
+      // kiểm tra xem text có bắt đầu bằng chữ hello hay ko \
+      let check = text.startsWith("hello"); // true
+      let check1 = text.startsWith("hello"); // false
+      // ứng dụng: trong những bài toán tìm kiếm
+      let std = [
+        {
+          name: "nam",
+        },
+        {
+          name: "an",
+        },
+        {
+          name: "minh anh",
+        },
+      ];
+      function checkStartString(longString, shortString) {
+        // Sử dụng phương thức startsWith để kiểm tra xem chuỗi dài có bắt đầu bằng chuỗi ngắn không
+        return longString.startsWith(shortString);
+      }
+
+      // Kiểm tra các trường hợp
+      console.log(checkStartString("Hello, World!", "Hello")); // Output: true
+      console.log(checkStartString("Hi there!", "there")); // Output: false
+    </script>
+  </body>
+</html>
