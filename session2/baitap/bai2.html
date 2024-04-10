@@ -10,8 +10,13 @@
       function hasUppercase(str) {
         return /[A-Z]/.test(str);
       }
-
-      console.log(hasUppercase("Hello")); 
+      function hasUppercase(str){
+        let result = [...str].some ((item,index,arr)=>{
+            return item  === item.toUpperCase();
+        });
+        return result;
+      }
+       console.log(hasUppercase("Hello")); 
       console.log(hasUppercase("hello")); 
     </script>
   </body>
